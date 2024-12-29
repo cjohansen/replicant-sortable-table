@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+    themes: cupcake --default, dark --prefersdark;
+}
+@config '../tailwind.config.js';
+
+@layer components {
+  .max-w-screen-lg {
+    @apply max-w-(--breakpoint-lg);
+  }
+}
