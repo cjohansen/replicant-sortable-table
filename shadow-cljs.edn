@@ -1,0 +1,7 @@
+{:deps {:aliases [:dev]}
+ :dev-http {8085 ["resources/public" "classpath:public"]}
+ :builds
+ {:app
+  {:target :browser
+   :modules {:main {:init-fn boardgames.dev/main}}
+   :dev {:output-dir "resources/public/js"}}}}
